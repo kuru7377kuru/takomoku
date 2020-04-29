@@ -1,0 +1,30 @@
+.messnu{ id: "contents" }
+  
+  %input(type="checkbox" class="openMenu")
+  %nav(class="menu") 
+    %ul
+      %li(class="menu-item")
+        = link_to('profile', {})
+      %li(class="menu-item")
+        = link_to('Information', {})
+      %li(class="menu-item")
+        = link_to('Setting', {})
+
+  .main
+    %hi tako-moku
+    %hr/
+    .main_contents
+      %table(class ="topics" border=1)
+        %tr
+          %th 分類
+          %th 重要度
+          %th メッセージ
+          %th 名前
+          %th 投稿日時
+        
+        %tr
+          %td category
+          %td zyuyo
+          %td messages
+          %td names
+          %td date
